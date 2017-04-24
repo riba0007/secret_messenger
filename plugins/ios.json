@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ca.edumedia.riba0007.secretMessenger"
+        },
+        "cordova-plugin-camera": {
+            "CAMERA_USAGE_DESCRIPTION": "Assigment requirement",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "ca.edumedia.riba0007.secretMessenger"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ca.edumedia.riba0007.secretMessenger"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ca.edumedia.riba0007.secretMessenger"
+        }
+    }
+}

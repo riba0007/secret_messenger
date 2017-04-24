@@ -1,0 +1,76 @@
+img.media-object {
+    width: 100%;
+}
+#newModal label {
+    float: left;
+    width: 35%;
+    padding: 8px 15px;
+    line-height: 1.1;
+}
+textarea{
+    resize: none;
+    border: none;
+}
+select{
+    padding: 8px 15px;
+    font-size: 17px;
+    width: 65%;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+.msg {
+    padding: 4px;
+    text-align: center;
+    margin: 2px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in; 
+    z-index: 999;
+}
+.error {
+    background-color: #fdf1f1;
+    color: #9c1010;
+}
+.warning {
+    background-color: #fffad9;
+    color: #716906;
+}
+.load {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+.hidden {
+    display: none;
+}
+.bar {
+    height: 64px;
+    padding-top: 20px;
+}
+.bar-nav~.content {
+    padding-top: 65px;
+}
+#loginModal a{
+    text-align: center;
+    display: block;
+}
+.fab {
+    background: url(../img/reload-lg-@2x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    box-shadow: 2px 2px 6px #888;
+    z-index: 11;
+    color: #fff;
+    background-color: #007aff;
+    border: 1px solid #007aff;
+}
+.fab:active {
+    background-color: #0062cc;
+    border: 1px solid #0062cc;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://griffis.edumedia.ca  'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: https: griffis.edumedia.ca  placeholdit.imgix.net placehold.it ;"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+
+        <link href="css/ratchet.min.css" rel="stylesheet" />
+        <link href="css/ratchet-theme-ios.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/index.css" />
+        <title>Secret Messenger</title>
+        
+    </head>
+    <body>
+        <header class="bar bar-nav">
+            <a id="msg-new" class="btn btn-link btn-nav pull-right" href="#newModal"> New </a>
+            <a id="logout" class="btn btn-link btn-nav pull-left" href="#loginModal"> Log Out </a>
+            <h1 class="title">Secret Messenger</h1>
+        </header>
+        <div class="content">
+            <ul class="table-view" id="msg-list">
+                <!--li class="table-view-cell media">
+                    <a class="navigate-right" href="#detailsModal">
+                        <div class="media-body">
+                            <span>From: User name</span>
+                        </div>
+                    </a>
+                </li-->
+            </ul>
+            <div class="fab"></div>
+        </div>
+        
+        <div id="newModal" class="modal">
+            <header class="bar bar-nav">
+                <a id="msg-cancel" class="btn btn-link btn-nav pull-left" href="#newModal">Back</a>
+                <a id="msg-send" class="btn btn-link btn-nav pull-right" href="#fake">Send</a>
+                <h1 class="title">New Message</h1>
+            </header>
+
+            <div class="content">
+                <div class="card">
+                    <form class="input-group">
+                        <div class="input-row">
+                            <label>User:</label>
+                            <select id="msg-user">
+                    
+                            </select>
+                        </div>
+                        <label>Message:</label>
+                        <textarea id="msg-text" placeholder="Secret Message" rows="3" maxlength="140"></textarea>
+                    </form>
+                    <p class="content-padded">
+                        <img  id="msg-picture" class="media-object hidden" src="img/placeholder.png">
+                        <button id="msg-take-picture" class="btn btn-positive btn-block">
+                            <span class="icon icon-play"></span>
+                            Take a Picture 
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="detailsModal" class="modal">
+            <header class="bar bar-nav">
+                <a id="back" class="btn btn-link btn-nav pull-left" href="#detailsModal">Back</a>
+                <a id="msg-answer" class="btn btn-link btn-nav pull-right" href="#detailsModal">Answer</a>
+                <h1 class="title">From: User name</h1>
+            </header>
+            
+            <div class="content">
+                <div class="card">
+                    <img class="media-object" src="" crossorigin="anonymous">
+
+                    <div class="content-padded">
+                        <span>Message</span>
+                    </div>
+                            
+                    <p class="content-padded">
+                        <button id="msg-delete" class="btn btn-negative btn-block">
+                            <span class="icon icon-close"></span>
+                            Delete Message 
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="loginModal" class="modal active">
+             <header class="bar bar-nav">
+                <h1 class="title">Secret Messenger</h1>
+            </header>
+
+            <div class="content">
+                <div class="card">
+                    <form class="input-group">
+                        <div class="input-row">
+                            <label>User:</label>
+                            <input id="lgn-user" type="text" placeholder="User Name" />
+                        </div>
+                        <div class="input-row">
+                            <label>Email:</label>
+                            <input id="lgn-email" type="text" placeholder="Email" />
+                        </div>
+                    </form>
+                    <p class="content-padded">
+                        <button id="lgn-login" class="btn btn-primary btn-block">
+                            <span class="icon icon-check"></span>
+                            Login  
+                        </button>
+                        <a id="lgn-register" href="#fake">Register and Login this user</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/ratchet.min.js"></script>
+        <script src="js/bits.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
